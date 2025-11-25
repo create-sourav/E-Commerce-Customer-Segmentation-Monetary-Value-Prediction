@@ -156,8 +156,7 @@ predict_customer_value(
     frequency=12,
     total_quantity=200,
     unique_products=10,
-    average_order_value=300,
-    monetary=2500
+    average_order_value=300
 )
 ```
 
@@ -222,26 +221,6 @@ The project includes the following visualizations:
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
 ```
-
-### Usage
-```python
-# Load the trained models
-from ecommerce_sales_clusters import predict_customer_value
-
-# Predict for a new customer
-result = predict_customer_value(
-    recency=20,
-    frequency=12,
-    total_quantity=200,
-    unique_products=10,
-    average_order_value=300,
-    monetary=2500
-)
-
-print(f"Cluster: {result['cluster']}")
-print(f"Predicted Monetary Value: ${result['predicted_value']:.2f}")
-```
-
 ---
 
 ## 📈 Key Results
