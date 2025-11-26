@@ -78,7 +78,7 @@ Customer-level aggregated features:
 
 ### Process
 1. Standardize RFM features
-2. Test K from 2 to 10 using **Silhouette Score**
+2. Test K from 2 to 10 using **Silhouette Score** and  **WCSS** 
 3. Select optimal K automatically
 4. Train final K-Means model
 5. Assign cluster labels to each customer
@@ -227,7 +227,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 | Metric | Value |
 |--------|-------|
-| **Optimal K** | (k=2, Silhouette Score=0.8958) |(k=2, WCSS=9012.64) 
+| **Optimal K** | (k=2, Silhouette Score=0.8958) (k=2, WCSS=9012.64) |
 | **Segments** | Low Value / At-Risk, High Value / VIP |
 | **Cluster 0 R²** | ~0.83 |
 | **Cluster 1 R²** | ~0.78 |
@@ -241,7 +241,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 ## 🛠️ Technologies Used
 
-- **Python 3.8+**
+- **Python 3**
 - **pandas** - Data manipulation
 - **numpy** - Numerical computing
 - **scikit-learn** - Machine learning (K-Means, Random Forest)
