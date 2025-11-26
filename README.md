@@ -136,8 +136,8 @@ Training separate Random Forest models for each cluster improves prediction accu
 5. Save scaler + model in dictionary
 
 ### Performance
-- **Cluster 0:** R² ≈ 0.92 (High performance)
-- **Cluster 1:** R² ≈ 0.42 (Moderate performance)
+- **Cluster 0:** R² ≈ 0.83 (High performance)
+- **Cluster 1:** R² ≈ 0.78 (Moderate performance)
 
 ---
 
@@ -227,10 +227,10 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 | Metric | Value |
 |--------|-------|
-| **Optimal K** | 2 (Silhouette Score) |
+| **Optimal K** | (k=2, Silhouette Score=0.8958) |(k=2, WCSS=9012.64) 
 | **Segments** | Low Value / At-Risk, High Value / VIP |
-| **Cluster 0 R²** | ~0.92 |
-| **Cluster 1 R²** | ~0.42 |
+| **Cluster 0 R²** | ~0.83 |
+| **Cluster 1 R²** | ~0.78 |
 
 ### End-to-End Pipeline
 ✅ Takes customer inputs  
